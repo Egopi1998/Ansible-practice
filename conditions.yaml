@@ -1,0 +1,8 @@
+- name: Learning conditionals concept
+  hosts: localhost
+  tasks:
+    - name: conditionals
+      ansible.builtin.command: id expense
+    - name: conditionals
+      ansible.builtin.debug:
+        msg: "hello, this after id expense"
