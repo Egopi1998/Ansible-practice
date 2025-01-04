@@ -12,7 +12,7 @@
     - name: variable decalring
       vars:
         WISH: "task"
-      ansible.buildin.debug:
+      ansible.builtin.debug:
         msg: "hello, this variable from ... {{WISH}}"
 
 # 1. 
