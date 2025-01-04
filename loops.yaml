@@ -14,7 +14,7 @@
   tasks:
     - name: loops
       ansible.builtin.dnf:
-        name: {{ item.key }}
-        state: {{ item.value }}
+        name: "{{ item.key }}""
+        state: "{{ item.value }}""
       loop:
       - { key: "nginx", value: "latest"}
