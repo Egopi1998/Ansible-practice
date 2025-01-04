@@ -1,0 +1,10 @@
+- name: Learning conditionals concept
+  hosts: localhost
+  vars:
+    Tools:
+    - AWS
+    - Terraform
+    - ansible
+    - docker and k8s
+  tasks:
+    - name: conditionals
