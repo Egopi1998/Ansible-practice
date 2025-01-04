@@ -2,8 +2,8 @@
   hosts: localhost
   vars_files:
     - vars.yaml
-  vars: #decalering varuable at play level
-    WISH: "play"
+  # vars: #decalering varuable at play level
+  #   WISH: "play"
   # vars_prompt:
   #   - name: WISH
   #     prompt:  "please enter from where you are giving variable"
@@ -19,3 +19,5 @@
 # 2. task level
 # 3. vars file
 # 4. prompt
+# 5. play
+# 6. 
