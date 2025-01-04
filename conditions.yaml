@@ -4,6 +4,7 @@
   tasks:
     - name: conditionals
       ansible.builtin.command: id expense
+      ignore_errors: true
     - name: conditionals
       ansible.builtin.debug:
         msg: "hello, this after id expense"
