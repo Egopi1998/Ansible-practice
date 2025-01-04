@@ -10,9 +10,11 @@
       private: false
   tasks:
     - name: variable decalring
-      vars:
-        WISH: "task"
+      # vars:
+      #   WISH: "task"
       ansible.builtin.debug:
         msg: "hello, this variable from ... {{WISH}}"
 
-# 1. 
+# 1. cli/args
+# 2. task level
+# 3. 
