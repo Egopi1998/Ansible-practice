@@ -1,5 +1,6 @@
 - name: Learning conditionals concept
   hosts: localhost
+  become: yes
   tasks:
     - name: conditionals
       ansible.builtin.command: id expense
