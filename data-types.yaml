@@ -7,11 +7,11 @@
     - Terraform
     - ansible
     - docker and k8s
-    Experiance: #map or dictionary
+    Experience: #map or dictionary
       AWS: 2
       Terraform: 2
       Docker: 3
   tasks:
     - name: priting all data types
       ansible.builtin.debug:
-        msg: "course: {{course}} and with tools {{Tools}} with experiance - {{Experiance}}"
+        msg: "course: {{course}} and with tools {{Tools}} with experience - {{Experience}}"
