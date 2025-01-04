@@ -11,10 +11,11 @@
 
 - name: loops with present and absent at a time
   hosts: localhost
+  become: yes
   tasks:
     - name: loops
       ansible.builtin.dnf:
         name: "{{ item.key }}"
         state: "{{ item.value }}"
       loop:
-      - { "key": "nginx", "value": "latest"}
+      - { key: "nginx", value: "latest"}
