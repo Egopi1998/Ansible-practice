@@ -17,4 +17,4 @@
         name: "{{ item.key }}"
         state: "{{ item.value }}"
       loop:
-      - { key: "nginx", value: "latest"}
+      - { "key": "nginx", "value": "latest"}
