@@ -19,3 +19,12 @@
         state: "{{ item.value }}"
       loop:
       - { key: "nginx", value: "latest"}
+- name: nginx service start and enable
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: nginx service start and enable
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: yes
