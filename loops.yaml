@@ -1,0 +1,20 @@
+- name: Learning conditionals concept
+  hosts: localhost
+  tasks:
+    - name: loops
+      ansible.builtin.debug:
+        msg: "hello, {{ item }}" #item is the spacial variable for loops
+      loop:
+      - linux
+      - gopi
+      - ampolu
+
+- name: loops with present and absent at a time
+  hosts: localhost
+  tasks:
+    - name: loops
+      ansible.builtin.dnf:
+        name: {{ item.key }}
+        state: {{ item.value }}
+      loop:
+      - { key: "nginx", value: "latest"}
