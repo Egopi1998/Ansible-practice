@@ -21,7 +21,7 @@
       - { key: "nginx", value: "latest"}
 - name: nginx service start and enable
   hosts: localhost
-  become: yes
+  become: yes 
   tasks:
     - name: nginx service start and enable
       ansible.builtin.service:
